@@ -1,372 +1,447 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Nathan Leigh - Homepage</title>
-		<meta name="description" content="Nathan Leigh - Homepage" />
-		<meta name="keywords" content="live like a cat, cat, Nathan Leigh, disruption, technology, robots, automation" />
-		<meta name="author" content="Nathan Leigh" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo2.css" />
-		<link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/tooltip-classic.css" />
-		<link rel="stylesheet" type="text/css" href="css/tooltip-round.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo1.css" />
-		<link rel="stylesheet" type="text/css" href="css/tabstyles1.css" />
-		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-	<!-- styles needed by jScrollPane -->
-	<link type="text/css" href="jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nathan Leigh Website</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="index.html">
+        <i class="fab fa-fw fas fa-home"></i>
+      </a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Nathan Leigh</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+        data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#summary">Summary</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
+          </li>
+          <!-- <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li> -->
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#cv">CV</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container">
+      <img class="img-fluid mb-5 d-block mx-auto" src="img/nathan-profile-pic-2.png" alt="">
+      <h1 class="text-uppercase mb-0">Nathan Leigh</h1>
+      <hr class="star-light">
+      <h2 class="font-weight-medium mb-0">Software Engineer @BBC</h2>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="text-center lead">
+            Have a passion for reading and writing about new innovations in science and technology and how it will
+            disrupt the economy and society in the near future.
+            </p>
+        </div>
+      </div>
+  </header>
 
 
-  		<script src="js/modernizr.custom.js"></script>
-		<script src="js/classie.js"></script>
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body class="demo-7">
-		<div id="container" class="container intro-effect-jam3">
-			<header class="header">
-				<div class="bg-img"><img src="img/fry.jpg" alt="Background Image" /></div>
-				<div class="title">
-					<nav class="codrops-demos">
-						<a class="tooltip tooltip-effect-5  current-demo" href="index.html">Home<span class="tooltip-content5"><i class="fa fa-2x fa-home"></i> </span></a>
-						<a class="tooltip tooltip-effect-5" href="restaurantapp.html">Restaurant Application<span class="tooltip-content5"><i class="fa fa-2x fa-cutlery"></i> </span></a>
-						<a class="tooltip tooltip-effect-5" href="livelikeacat.html">Live Like A Cat<span class="tooltip-content5"><i class="fa fa-2x fa-paw"></i> </span></a>
-						<a class="tooltip tooltip-effect-5" href="exponentialdisruption.html">Exponential Disruption<span class="tooltip-content5"><i class="fa fa-2x fa-exclamation-triangle "></i> </span></a>		
-					</nav>
-					
-					<h1><a  href="index.html">Nathan Leigh</a></h1>
-					<h2><a id="top"></a>Homepage</h2>
-					<p class="subline">	</p>
-					<p>
-					Homepage of Nathan Leigh<br> Enthusiastic about Technology, Computers, Cats and Football.
-					</div>
-			</header>
-			<button class="trigger" ><span>Trigger</span></button>
-			<article class="content">
-				<div class="dummy dummy-text">
-					
-					
-					Graduated from Manchester University in 2014 with a Bsc. in Computer Science.
-					
-					Created LiveLikeACat to look at how technology can create a 
-					world of abundance for us all, and allow us to live a life of luxury, much like a pet cat.
-					Created Exponential Disruption to show the
-					transition will not be smooth unless we start preparing for it now.
-					Restaurant App is a Uni project.
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh" >Written articles on Medium discussing Technology.</a>
-					
-					<br>
-					<i>"Nathan, you are truly brilliant. You understand the impacts of advancing technologies better than almost anyone--and write well" </i>- 
-				        <a href="https://medium.com/@nath_leigh/the-lost-generation-that-hasn-t-even-been-born-323b659ba262#.txitw8jsy" >Vivek Wadhwa</a> - Appointments at Duke, Stanford, and Singularity University. Former entrepreneur.
 
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh/the-lost-generation-that-hasn-t-even-been-born-323b659ba262#.txitw8jsy" >The Lost Generation That Hasn't Even Been Born</a>
-					- This article looks at the current issues facing young people in housing, the job market, education and social mobility in the UK to predict what this may hold for people being born today as they enter into an increasingly disruptive future.
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh/disruption-of-mental-work-1aef08ad4fc4#.pf4yclma6" >Disruption of Mental Work</a>
-					- As much of the muscle work has been replaced by machines, the brain work is starting to face a similar fate by “intelligent” software bots. Cognitive computing like IBM’s Watson is giving computers the ability to “think”, which has the potential to disrupt a wide range of occupations. Computer power will become exponentially more powerful and AI algorithms being fed Big Data from the Internet of Things will evolve from 
-					 Smart Assistants like Siri, into Smart Workers and Smart Bosses and even to Smart Teachers and Doctors within the next 20 years.
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh/physical-work-disruption-cfb24bcdeaf7#.64uavbjr9" >Physical Work Disruption</a>
-					- Robots are approaching a technological inflection point that will let them operate more reliably in dynamic, unscripted environments by taking on tasks that once relied on humans’ manual dexterity and good eyesight and cognitive thinking. Service robots are opening new contexts for productivity gains beyond what industrial robots have done. The capabilities of robots will 
-					increase and their price will drops over the next 20 years, resulting in disruption for many occupations. <br>
-					<i>"Wow, tour de force review of the very latest developments in robotics with implications on employment by @nath_leigh"</i>
-					<a href="https://twitter.com/geraldhuff/status/632566627171594241" > Gerald Huff</a> - Principal Software Engineer at Tesla Motors
-					
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh/how-self-driving-cars-will-disrupt-retail-fb3604bc4c97#.2t7veu7zo" >How Self Driving Cars will disrupt Retail</a>
-					- Self Driving Cars may impact physical retail stores, especially if they are combined with other new advancing technology such as automated warehouses, drones and 3D printing. This will allow products to be delivered to wherever you want, whenever you want and much quicker and cheaper than currently possible, 
-					creating a new level of convenience that some brick and mortar stores may struggle to compete with.
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh/self-driving-disruption-160a28df5153#.i9bojn5l6" >Self Driving Disruption</a>
-					- A brief look at some of the industries and occupations that Self Driving Cars will disrupt within the next 20 years.
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh/stem-disruption-568b22a7edb5#.fndwch7bu" >STEM Disruption</a> 
-					Get a STEM(Science, Technology, Engineering and Mathematics) degree is a common response to people when the topic of automation of jobs comes up or as a solution to increasing automation because more automation and robots means more jobs maintaining the robots and software. This article illustrates that this 
-					solution is not so simple and shows how even STEM jobs are not immune from disruption in the near future due to new technologies.
-					<br>
-					<br>
-					Have written a set of 4 articles, each 10,000+ words long which looks in great detail at how low skilled/experienced/educated people (particularly young men) may find it difficult to 
-					adapt to a future job market and some solutions to prevent any unnecessary suffering. 
-					<br>
-					<br>
-					<a href="https://medium.com/@nath_leigh/low-skilled-humans-need-not-apply-exponential-job-disruption-9c772914ed42#.7z2vkuwb5" > Low Skilled Humans Need Not Apply: Exponential Job Disruption </a>
-					- In this first article I discuss the new technologies which will disrupt many popular occupations, particularly low skilled, as cautionary wake up call to better handle the transition that is inevitably coming our way within the next 20 years.
-					We can prevent people from having to needlessly suffer and turn this coming disruption into a situation where we can all more equally enjoy the wealth the machines can bring us. 
-					<br>
-					Currently at 26K views with 1.5K reads on Medium, which when considering it is 10,000 words long(28 min read length according to Medium) is a pretty good number.
-					<br>	
-					<br>
-					<a href="https://medium.com/@nath_leigh/low-skilled-humans-need-not-apply-the-growth-quality-and-polarization-of-new-jobs-9e41049b863c#.wr2k1tp03" >Low Skilled Humans Need Not Apply: The Growth, Quality And Polarization Of New Jobs</a>
-					- This 2nd article looks at the quality of new jobs, the erosion of the middle class leading to a polarisation of low skilled and high
-					skilled jobs, the emerging models of employment, the rise of a globally educated workforce, the reduction in worker 
-					bargaining power and how technology will disrupt workers, particularly in low skilled jobs.
-					<br>		
-					<br>
-					<a href="https://medium.com/@nath_leigh/low-skilled-humans-need-not-apply-the-employment-future-for-a-child-born-today-98af1ea391a9#.8z9nnb76e" >Low Skilled Humans Need Not Apply: The Employment Future For A Child Born Today</a>
-					- In this 3rd article of a set of 4 I am going to discuss the labor market and education 
-					opportunities a child born in 2015 could have when they are 16–20 by looking at how technology
-					will disrupt the majority of jobs young people can only perform. I also show the unequal 
-					opportunity and discrimination a child of a certain race and/or gender currently faces. 
-					Finally I predict how a disenfranchised group of young men may develop as they are less 
-					likely to gain the higher skills vital
-					to participate in the future global job market and some of the issues this could cause on
-					a local and global scale.
-					<br>		
-					<br>
-					<a href="https://medium.com/@nath_leigh/low-skilled-humans-need-not-apply-preventative-luddism-15e6a5225d5a#.sq7wf9vw7" >Low Skilled Humans Need Not Apply: Preventative Luddism</a>
-					- This last article looks at historic transitions and how we should learn from the mistakes of the past in dealing with disruption, I also explain the common misconceptions about the Luddites. 
-					I discuss policies and changes in culture which I believe will help us all more equally enjoy the abundance technology can bring.
-					Last of all I highlight the main reason for my current optimism for the future and why I believe the policy solutions I discuss can be put in place soon, to better prepare 
-					us and to ease the continuous disruption as we transition into a digital age.
-					<br>
-					<br>
-					LinkedIn Link - <a href="https://uk.linkedin.com/in/nleigh" >https://uk.linkedin.com/in/nleigh</a>
-					<br>
-					<br>Currently Employed as a Software Developer at AO.Com.
-					<br>
-					Email: <a href="nleigh11@gmail.com" >nleigh11@gmail.com</a>
-					<br><br>
-			
-					
-					
-				
-					<br>
-						<br> <img style="margin:0px auto;display:block" src="img/leigh.jpg" alt="nathanleigh"  />
-						<br><br>
-				
-					<br>
-					
-					<a href="https://drive.google.com/file/d/0B7e6PmtqP6HPLUZxUVU2VHY2Qm8/view?usp=sharing" class="button2" 
-					data-ytta-id="-">Download CV in PDF</a>
-				
-							<br><br>Top Ten List Of things I like because why not?
-					<br>
-					<br><br>Music - Oasis, Arctic Monkeys, Coldplay, Kanye West, Kings Of Leon, Stereophonics, Jamie T, U2, The Verve, The Cure, Radiohead
-					<br><br>				
-					Actors -  Daniel Day-Lewis, Leonardo DiCaprio, Will Ferrell, Jim Carrey, Will Smith, Edward Norton, Matt Damon, Danny DeVito, Tom Cruise, Brad Pitt 
+  <!-- Portfolio Grid Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            Medium Articles on Technology
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/medium.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            Exponential Disruption Website
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/city.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            Live Like A Cat Website
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/ivy.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+            Android App - Restaurant System - Uni Project
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/fire.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<br><br>Films - The Matrix, The Devil's Advocate, Good Will Hunting, In Bruges, Snatch, Lock Stock and 2 Smoking Barrels, Lotr:fotr, Unbreakable, Star Wars IV, Bourne Identity
-
-					<br><br>TV - The Office, South Park, Classic Simpsons, Futurama, L.O.S.T,  Its Always Sunny in Philadelphia, Game of Thrones, Breaking Bad, Peep Show, Rome
-
-					<br><br>Books - Brave New World, Player Piano, LOTR, Harry Potter, His Dark Materials, 1984, Hitchhikers Guide to the Galaxy, Asoiaf, The Hobbit, To Kill a Mockingbird
-
-					<br><br>Games - The Last Of Us, Fifa, The Witcher, GTA, Bioshock, Burnout, Civilization, Medieval Total War, Mass Effect, Age of Empires
-
-					<br><br>Podcasts - Ricky Steve & Karl, Richard D Wolff, Star Talk, Singularity 1 on 1, Roosterteeth, The Infinite Monkey Cage, The Cracked Podcast, Joe Rogan, Freakonomics, Intelligence Squared.
-
-					<br><br>Youtube Channels - LetsPlay, Cgpgrey, Emergency Awesome, Kurz Gesagt - In a Nutshell, League of Super Critics, RackaRacka, TeamFourStar, The Redmen TV, Tom Scott, Vsauce
-
-					<br><br>Stand Up Comedians - Ricky Gervais, Louis CK, Jimmy Carr, Jim Jefferies, Peter Kay, Bill Burr, George Carlin, Chris Rock, Stephen Merchant, Frankie Boyle 	
-					<br><br>Other things - Elon Musk, Android, Choclate, VR, Robotics, Netflix,  Alison Brie, Manchester, Motorbikes, Pizza 
-					<br><br><br><br>
-					</div>
-					
-					
-					
-					
-				<br><br><a href="#top">Go to top</a>
-				<br><br>Best viewed on the latest versions of Google Chrome<br>
-				
-					<br><br><br>
-					
-					<span class="tooltip tooltip-effect-1">
-					<span class="tooltip-item">
-						 About
-					</span>
-					<span class="tooltip-content clearfix">
-					<img src="img/kizzy.png" alt=" Kizzy"/>
-					<span class="tooltip-text">
-					<strong>  </strong>
-					
-					Website created by <a href="https://twitter.com/nath_leigh"target="_blank">
-					<br>Nathan Leigh
-					 </a>
-					<br>
-					 <br>
-					Website tools created by 
-					  <a href="http://tympanus.net/codrops/author/crnacura/"target="_blank">Mary Lou. 
-				
-					 </a>
-					 <br>
-					 <br>
-					Picture of my cat Kizzy on the right.
-					
-					</span></span></span>
-					
-			</article>
-			
-		</div><!-- /container -->
-		
-		<script>
-			(function() {
-
-				// detect if IE : from http://stackoverflow.com/a/16657946		
-				var ie = (function(){
-					var undef,rv = -1; // Return value assumes failure.
-					var ua = window.navigator.userAgent;
-					var msie = ua.indexOf('MSIE ');
-					var trident = ua.indexOf('Trident/');
-
-					if (msie > 0) {
-						// IE 10 or older => return version number
-						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-					} else if (trident > 0) {
-						// IE 11 (or newer) => return version number
-						var rvNum = ua.indexOf('rv:');
-						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
-					}
-
-					return ((rv > -1) ? rv : undef);
-				}());
+  <!-- About Section
+  <section class="bg-primary text-white mb-0" id="about">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white">About</h2>
+      <hr class="star-light mb-5">
+      <div class="row">
 
 
-				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
-				// left: 37, up: 38, right: 39, down: 40,
-				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Highly experienced back-end software engineer with proven technical devops ability in
+            multiple cloud providers such as Microsoft Azure, Google Cloud and Amazon Web Services, with official
+            certification in the latter.</p>
+        </div>
 
-				function preventDefault(e) {
-					e = e || window.event;
-					if (e.preventDefault)
-					e.preventDefault();
-					e.returnValue = false;  
-				}
+        <div class="col-lg-4 mr-auto">
+          <p class="lead"> Acquired a significant knowledge of engineering best practices for creating excellently
+            engineered, high
+            availability solutions. Apply excellent clean coding standards by writing well tested, readable and
+            maintainable code. Skilled in a multitude of database technologies and have a strong front end developer
+            skill set.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Follow Agile Methodologies such as an iterative/incremental development approach for
+            continuous delivery of
+            value, allowing for fast feedback in the software lifecycle. Current role makes advantage of my strong
+            communication skills and team working abilities as I collaborate with Software Engineers, Machine Learning
+            Engineers and Data Scientists throughout the project.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">
+            Constantly striving to progress and improve as a developer. Quickly adaptive to new ideas and environments
+            due to eagerness to acquire new skills. Attentive in sharpening existing talents. Ability to think
+            critically and analytically break down problems to solve logically efficient solutions.
+          </p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead"> Enthusiastic to reflect my positive friendly attitude and supportive/understanding mentality
+            to culture a
+            motivated and fun work environment. Believe it is priority to understand the non-functional & functional
+            requirements to design the best possible results. Heavily collaborated with product owners & project
+            managers in planning strategies to produce the optimum and cost effective solution to achieve the clients
+            needs.</p>
+        </div>
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">
+            Have a passion for reading and writing about new innovations in science and technology, and how it will
+            disrupt the economy and society in the near future. Live a healthy active lifestyle by visiting the gym
+            regularly and playing 5-a-side football weekly. Hobbies include playing guitar, photography, history and
+            going on rides on my motorbike in national parks.</p>
+        </div>
+      </div>
 
-				function keydown(e) {
-					for (var i = keys.length; i--;) {
-						if (e.keyCode === keys[i]) {
-							preventDefault(e);
-							return;
-						}
-					}
-				}
+    </div>
+  </section> -->
 
-				function touchmove(e) {
-					preventDefault(e);
-				}
 
-				function wheel(e) {
-					// for IE 
-					//if( ie ) {
-						//preventDefault(e);
-					//}
-				}
 
-				function disable_scroll() {
-					window.onmousewheel = document.onmousewheel = wheel;
-					document.onkeydown = keydown;
-					document.body.ontouchmove = touchmove;
-				}
+  <!-- Contact Section -->
+  <section class="bg-primary text-white mb-0" id="contact">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white">Contact</h2>
+      <hr class="star-light mb-5">
+      <div class="text-center mt-4">
 
-				function enable_scroll() {
-					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
-				}
 
-				var docElem = window.document.documentElement,
-					scrollVal,
-					isRevealed, 
-					noscroll, 
-					isAnimating,
-					container = document.getElementById( 'container' ),
-					trigger = container.querySelector( 'button.trigger' );
+        <address class="btn btn-xl btn-outline-light" href="mail.to:nleigh11@gmail.com">
+          <i class="fas fa-envelope mr-2"></i>
+          Email: nleigh11@gmail.com
+        </address>
+        <img class="img-fluid" src="img/holiday.jpg" alt="">
 
-				function scrollY() {
-					return window.pageYOffset || docElem.scrollTop;
-				}
-				
-				function scrollPage() {
-					scrollVal = scrollY();
-					
-					if( noscroll && !ie ) {
-						if( scrollVal < 0 ) return false;
-						// keep it that way
-						window.scrollTo( 0, 0 );
-					}
+      </div>
 
-					if( classie.has( container, 'notrans' ) ) {
-						classie.remove( container, 'notrans' );
-						return false;
-					}
+  </section>
 
-					if( isAnimating ) {
-						return false;
-					}
-					
-					if( scrollVal <= 0 && isRevealed ) {
-						toggle(0);
-					}
-					else if( scrollVal > 0 && !isRevealed ){
-						toggle(1);
-					}
-				}
+  <section class="portfolio" id="cv">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">CV</h2>
+        <hr class="star-dark mb-5">
+  
+        <div class="text-center mt-4">
+          <img class="img-fluid" src="img/leigh.jpg" alt="">
+  
+          <a class="btn btn-xl btn-outline-dark" href="https://www.linkedin.com/in/nleigh/">
+            <i class="fas fa-download mr-2"></i>
+            Download CV!
+          </a>
+  
+        </div>
+    </section>
 
-				function toggle( reveal ) {
-					isAnimating = true;
-					
-					if( reveal ) {
-						classie.add( container, 'modify' );
-					}
-					else {
-						noscroll = true;
-						disable_scroll();
-						classie.remove( container, 'modify' );
-					}
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Manchester
+            <br>UK</p>
+        </div>
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/nleigh/">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://play.google.com/store/apps/details?id=uk.co.nathanleigh.restaurantsystem">
+                <i class="fab fa-fw fab fa-google-play"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/nleigh">
+                <i class="fab fa-fw fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-					// simulating the end of the transition:
-					setTimeout( function() {
-						isRevealed = !isRevealed;
-						isAnimating = false;
-						if( reveal ) {
-							noscroll = false;
-							enable_scroll();
-						}
-					}, 600 );
-				}
+        <div class="col-md-4">
+          <h4 class="text-uppercase mb-4">Website Info</h4>
+          <p class="lead mb-0">Created using open source Bootstrap theme created by
+            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-				// refreshing the page...
-				var pageScroll = scrollY();
-				noscroll = pageScroll === 0;
-				
-				disable_scroll();
-				
-				if( pageScroll ) {
-					isRevealed = true;
-					classie.add( container, 'notrans' );
-					classie.add( container, 'modify' );
-				}
-				
-				window.addEventListener( 'scroll', scrollPage );
-				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-			})();
-		</script>
-		
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
 
-		  ga('create', 'UA-59989087-2', 'auto');
-		  ga('send', 'pageview');
+  <!-- Portfolio Modals -->
 
-		</script>
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Medium Articles</h2>
+            <hr class="star-dark mb-5">
+            <!-- <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt=""> -->
+            <p class="mb-5">
+              Articles written about the disruption that automation technologies pose on society and the economy,
+              and policy suggestions on how to alleviate the negative outcomes.
 
-	</body>
+
+            </p>
+
+            <p>
+              <blockquote class="twitter-tweet tw-align-center" data-lang="en">
+                <p lang="en" dir="ltr">fascinating article! Thanks for sharing.</p>&mdash; Fraser Nelson
+                (@FraserNelson) <a href="https://twitter.com/FraserNelson/status/789759655086026752?ref_src=twsrc%5Etfw">October
+                  22, 2016</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            </p>
+            <p>
+              <blockquote class="twitter-tweet tw-align-center" data-lang="en">
+                <p lang="en" dir="ltr"><a href="https://twitter.com/nath_leigh?ref_src=twsrc%5Etfw">@nath_leigh</a>
+                  Nathan, you are truly brilliant. You understand the impacts of advancing technologies better than
+                  almost anyone--and write well</p>&mdash; Vivek Wadhwa (@wadhwa) <a href="https://twitter.com/wadhwa/status/625090953116712960?ref_src=twsrc%5Etfw">July
+                  25, 2015</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            </p>
+
+
+            <p>
+              <blockquote class="twitter-tweet tw-align-center" data-lang="en">
+                <p lang="en" dir="ltr">Wow, tour de force review of the very latest developments in robotics with
+                  implications on employment by <a href="https://twitter.com/nath_leigh?ref_src=twsrc%5Etfw">@nath_leigh</a>
+                  <a href="https://t.co/PcxjzSsNyL">https://t.co/PcxjzSsNyL</a></p>&mdash; Gerald Huff (@geraldhuff) <a
+                  href="https://twitter.com/geraldhuff/status/632566627171594241?ref_src=twsrc%5Etfw">August 15, 2015</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
+
+            <a class="btn btn-primary btn-lg rounded-pill" href="medium-articles.html">
+              <i class="fa fa-close"></i>
+              View Articles
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Exponential Disruption</h2>
+            <hr class="star-dark mb-5">
+            <p>
+              Web page looking at exponential technologies and their potential impact on jobs and society.
+            </p>
+            <!-- <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt=""> -->
+            <p class="mb-5">In the next 20 years we will face a continuous increasing rate of technological disruption
+              for many of the mass occupations that people perform.
+              If you believe how historically new jobs have always been created and they always will be, then you have
+              to also agree that history indicates if mass labor transitions.
+              It is time to acknowledge huge exponential disruption like we have never seen before is about take place
+              and start preparing for this transition to a new digital age.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="exponential-disruption/exponential-disruption.html">
+              <i class="fa fa-close"></i>
+              Go to Exponential Disruption Page
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Live Like A Cat</h2>
+            <hr class="star-dark mb-5">
+            <!-- <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt=""> -->
+            <p class="mb-5">This website explains how in the future we could build a world where our essential
+              needs are taken care off, and live a life of luxury and play, much like cats do.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="live-like-a-cat/index.html">
+              <i class="fa fa-close"></i>
+              Go to Live Like A Cat Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="restaurant-system.html ">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0"> Android Restaurant System App</h2>
+            <hr class="star-dark mb-5">
+            <!-- <img class="img-fluid mb-5" src="img/portfolio/game.png" alt=""> -->
+            <p class="mb-5">
+              My final year uni project was to build an Android Restaurant System Application.
+            </p>
+
+            <p>Create and edit any type of customisable menu Item.</p>
+
+            <p>Dynamically calculates nutritional information and prices for menu items. </p>
+            <p>Orders will automatically adjust the stock levels of the ingredients used. </p>
+            <p>Both waiters and customers can order items which can then be viewed by a kitchen. </p>
+
+
+            <a class="btn btn-primary btn-lg rounded-pill" href="restaurant-system.html">
+              <i class="fa fa-close"></i>
+              Go to Restaurant App
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
 </html>
