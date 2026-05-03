@@ -12,5 +12,6 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: #2563EB !default;
-$secondary: #0F172A !default;
+// Use explicit hex values to prevent Sass emitting fractional RGB channel values
+$primary: #2563eb !default;
+$secondary: #0f172a !default;
