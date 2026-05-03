@@ -12,7 +12,7 @@
   <meta property="og:title" content="Nathan Leigh | Software Engineer">
   <meta property="og:description" content="Portfolio of Nathan Leigh, a Software Engineer specializing in large-scale distributed systems and cloud architectures.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.nathanleigh.co.uk/img/nathan.png">
+  <meta property="og:image" content="https://www.nathanleigh.co.uk/img/nathan-optimized.jpg">
   <meta property="og:url" content="https://www.nathanleigh.co.uk/">
 
   <title>Nathan Leigh | Software Engineer</title>
@@ -48,10 +48,10 @@
       <div class="collapse navbar-collapse" style="text-align: right" id="navbarResponsive">
        <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#experience">Experience</a>
+            <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#experience">Experience</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -561,6 +561,10 @@
   <script>
     (function () {
       var fadeEls = document.querySelectorAll('section, .skill-tag');
+      // Respect user preference for reduced motion
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
       if (!('IntersectionObserver' in window)) {
         fadeEls.forEach(function(el) { el.style.opacity = '1'; });
         return;

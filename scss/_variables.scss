@@ -15,3 +15,7 @@ $black: #000 !default;
 // Use explicit hex values to prevent Sass emitting fractional RGB channel values
 $primary: #2563eb !default;
 $secondary: #0f172a !default;
+
+// Dark variants (used for hover states and footer)
+$primary-dark: #1a4fbd !default;
+$secondary-dark: #030508 !default;

@@ -1,7 +1,5 @@
 // Bootstrap overrides for this template
-// Explicit hex values used for hover states to avoid Sass emitting fractional rgb() values
-$primary-dark: #1a4fbd;
-$secondary-dark: #030508;
+// Dark variant variables are defined in _variables.scss
 
 a {
   color: $primary;
