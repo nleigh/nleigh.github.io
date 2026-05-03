@@ -51,6 +51,9 @@
             <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#experience">Experience</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -83,8 +86,85 @@
           </p>
         </div>
       </div>
+      <!-- Status Badge + Social Links -->
+      <div class="mt-4 mb-2">
+        <span class="badge badge-pill" style="background-color: rgba(255,255,255,0.15); color: #fff; font-size: 0.9rem; padding: 0.5rem 1rem; border: 1px solid rgba(255,255,255,0.3);">
+          <span style="color: #4ade80;">&#9679;</span> Open to Opportunities
+        </span>
+      </div>
+      <div class="mt-3">
+        <a href="https://www.linkedin.com/in/nleigh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-social rounded-circle mx-1" aria-label="LinkedIn">
+          <i class="fab fa-fw fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/nleigh" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-social rounded-circle mx-1" aria-label="GitHub">
+          <i class="fab fa-fw fa-github"></i>
+        </a>
+      </div>
     </div>
   </header>
+
+  <!-- Tech Skills Section -->
+  <section class="bg-secondary text-white" id="skills">
+    <div class="container py-5">
+      <h2 class="text-center text-uppercase text-white mb-0">Tech Skills</h2>
+      <hr class="star-light mb-5">
+      <div class="row text-center">
+
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fab fa-python mr-2"></i>Python</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-stream mr-2"></i>Apache Kafka</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-water mr-2"></i>Apache Flink</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-code mr-2"></i>Go / Golang</div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fab fa-aws mr-2"></i>AWS</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fab fa-google mr-2"></i>Google Cloud</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fab fa-microsoft mr-2"></i>Azure</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-dharmachakra mr-2"></i>Kubernetes</div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fab fa-docker mr-2"></i>Docker</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-layer-group mr-2"></i>Terraform</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-database mr-2"></i>PostgreSQL</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-tachometer-alt mr-2"></i>Grafana</div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-coffee mr-2"></i>Java / Scala</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fab fa-js mr-2"></i>JavaScript</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fab fa-react mr-2"></i>React</div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="skill-tag"><i class="fas fa-vials mr-2"></i>TDD / Agile</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
 
@@ -302,7 +382,7 @@
 
         <div class="col-md-4">
           <h4 class="text-uppercase mb-4">Copyright</h4>
-          <p class="lead mb-0">&copy; 2026 Nathan Leigh<br>All Rights Reserved.</p>
+          <p class="lead mb-0">&copy; <span id="copyright-year"></span> Nathan Leigh<br>All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -478,6 +558,35 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <!-- Dynamic copyright year -->
+  <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+
+  <!-- Fade-in on scroll animations -->
+  <script>
+    (function () {
+      var fadeEls = document.querySelectorAll('section, .skill-tag');
+      if (!('IntersectionObserver' in window)) {
+        fadeEls.forEach(function(el) { el.style.opacity = '1'; });
+        return;
+      }
+      fadeEls.forEach(function(el) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(24px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      });
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      fadeEls.forEach(function(el) { observer.observe(el); });
+    })();
+  </script>
 
 </body>
 
