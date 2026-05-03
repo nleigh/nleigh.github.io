@@ -1,10 +1,12 @@
 // Bootstrap overrides for this template
+// Dark variant variables are defined in _variables.scss
+
 a {
   color: $primary;
   &:focus,
   &:hover,
   &:active {
-    color: darken($primary, 10%);
+    color: $primary-dark;
   }
 }
 
@@ -34,8 +36,8 @@ a {
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($primary, 10%);
-    border-color: darken($primary, 10%);
+    background-color: $primary-dark;
+    border-color: $primary-dark;
   }
 }
 
@@ -45,7 +47,7 @@ a {
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($secondary, 10%);
-    border-color: darken($secondary, 10%);
+    background-color: $secondary-dark;
+    border-color: $secondary-dark;
   }
 }

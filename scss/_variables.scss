@@ -12,5 +12,10 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: #18BC9C !default;
-$secondary: #2C3E50 !default;
+// Use explicit hex values to prevent Sass emitting fractional RGB channel values
+$primary: #2563eb !default;
+$secondary: #0f172a !default;
+
+// Dark variants (used for hover states and footer)
+$primary-dark: #1a4fbd !default;
+$secondary-dark: #030508 !default;
